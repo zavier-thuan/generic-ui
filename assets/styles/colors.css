@@ -28,22 +28,22 @@
   }
 }
 
-[danger] {
+[color="danger"] {
   --local-color: var(--danger);
 }
-[warning] {
+[color="warning"] {
   --local-color: var(--warning);
 }
-[notice] {
+[color="notice"] {
   --local-color: var(--notice);
 }
-[success] {
+[color="success"] {
   --local-color: var(--success);
 }
-[neutral] {
+[color="neutral"] {
   --local-color: var(--neutral);
 }
-[accent] {
+[color="accent"] {
   --local-color: var(--accent);
 }
 
