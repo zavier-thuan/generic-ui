@@ -89,6 +89,7 @@ a.logo img {
   margin: 0.5rem;
   padding: 0.5rem;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 #user-nav #menu-toggler {
   display: none;
