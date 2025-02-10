@@ -23,10 +23,10 @@ html {
   font-size: clamp(0.75rem, 0.85rem + 0.5vw, 1rem);
   line-height: 1.5;
   scroll-behavior: smooth;
+  background: var(--global-background);
+  color: var(--global-typography);
 }
 
 body {
   min-height: 100svh;
-  background: var(--global-background);
-  color: var(--global-typography);
 }
