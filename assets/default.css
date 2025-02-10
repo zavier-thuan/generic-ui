@@ -1,3 +1,5 @@
+@import url(./styles/_color.css);
+
 *,
 *::before,
 *::after {
@@ -13,6 +15,7 @@
   user-select: none;
   transition-duration: 0.25s;
   font-size: inherit;
+  color-scheme: light dark;
 }
 
 html {
@@ -24,4 +27,6 @@ html {
 
 body {
   min-height: 100svh;
+  background: var(--global-background);
+  color: var(--global-typography);
 }

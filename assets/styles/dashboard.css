@@ -9,7 +9,7 @@ a.logo {
   align-items: center;
   justify-content: start;
   font-weight: 800;
-  color: #111;
+  color: var(--global-typography);
   margin: 0.5rem;
   padding: 0.5rem;
   letter-spacing: 0.5rem;
@@ -27,7 +27,7 @@ a.logo img {
 }
 #sidebar-toggler {
   cursor: ew-resize;
-  background: #ccc;
+  background: var(--global-separator);
   width: 0.25rem;
   height: 3rem;
   margin: 0.25rem;
@@ -55,7 +55,7 @@ a.logo img {
   gap: 0.5rem;
   max-width: 15rem;
   height: 100svh;
-  box-shadow: 0 0 10rem #eee;
+  box-shadow: 0 0 10rem color-mix(in srgb, var(--global-separator), var(--mix-forward) 90%);
 }
 
 #main-nav {
@@ -71,14 +71,14 @@ a.logo img {
   display: flex;
   gap: 0.5rem;
   align-items: center;
-  color: #111;
+  color: var(--global-typography);
   text-decoration: none;
   border-radius: 0.5rem;
   font-weight: 600;
 }
 #main-nav a:hover {
-  background: #ddd;
-  box-shadow: 0 0 0.125rem #333;
+  background: var(--global-foreground);
+  box-shadow: 0 0 0.125rem var(--global-separator);
 }
 
 #user-nav {
@@ -96,13 +96,13 @@ a.logo img {
 }
 #user-nav:hover,
 #user-nav:has(#menu-toggler:checked) {
-  background: #ddd;
-  box-shadow: 0 0 0.125rem #333;
+  background: var(--global-foreground);
+  box-shadow: 0 0 0.125rem var(--global-separator);
 }
 #user-nav img.avatar {
   background: #fff;
   border-radius: 50%;
-  border: 0.0625rem solid #333;
+  border: 0.0625rem solid var(--global-separator);
   width: 2.5rem;
 }
 #user-nav span {
@@ -126,16 +126,16 @@ a.logo img {
   width: 100%;
   display: none;
   flex-direction: column;
-  background: #fff;
+  background: var(--global-foreground);
   border-radius: 0.5rem;
   padding: 0.5rem;
   gap: 0.5rem;
-  box-shadow: 0 0 0.25rem #555;
+  box-shadow: 0 0 0.25rem var(--global-separator);
   z-index: 100;
 }
 #user-nav #user-menu a {
   text-decoration: none;
-  color: #111;
+  color: var(--global-typography);
   padding: 0.5rem 0.5rem;
   border-radius: 0.25rem;
   display: flex;
@@ -143,8 +143,8 @@ a.logo img {
   align-items: center;
 }
 #user-nav #user-menu a:hover {
-  background: #ddd;
-  box-shadow: 0 0 0.125rem #333;
+  background: var(--global-background);
+  box-shadow: 0 0 0.125rem var(--global-separator);
 }
 #user-nav:has(#menu-toggler:checked) #user-menu {
   display: flex;

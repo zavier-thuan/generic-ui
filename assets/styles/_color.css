@@ -1,0 +1,58 @@
+:root {
+  --mix-tint: white;
+  --mix-shade: black;
+  --mix-forward: var(--mix-tint);
+  --mix-reverse: var(--mix-shade);
+
+  --accent: #911199;
+  --neutral: #555555;
+
+  --danger: hsl(350, 50%, 50%);
+  --warning: hsl(36, 50%, 50%);
+  --notice: hsl(220, 50%, 50%);
+  --success: hsl(140, 50%, 50%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --mix-forward: var(--mix-shade);
+    --mix-reverse: var(--mix-tint);
+
+    --accent: hsl(296, 30%, 45%);
+    --neutral: #888888;
+
+    --danger: hsl(350, 50%, 60%);
+    --warning: hsl(36, 50%, 60%);
+    --notice: hsl(220, 50%, 60%);
+    --success: hsl(140, 50%, 60%);
+  }
+}
+
+[danger] {
+  --local-color: var(--danger);
+}
+[warning] {
+  --local-color: var(--warning);
+}
+[notice] {
+  --local-color: var(--notice);
+}
+[success] {
+  --local-color: var(--success);
+}
+[neutral] {
+  --local-color: var(--neutral);
+}
+[accent] {
+  --local-color: var(--accent);
+}
+
+:root {
+  --selection-background: color-mix(in srgb, var(--accent), var(--mix-reverse) 30%);
+  --selection-typography: color-mix(in srgb, var(--accent), var(--mix-forward) 90%);
+
+  --global-background: color-mix(in srgb, var(--neutral), var(--mix-forward) 85%);
+  --global-foreground: color-mix(in srgb, var(--neutral), var(--mix-forward) 95%);
+  --global-typography: color-mix(in srgb, var(--neutral), var(--mix-reverse) 50%);
+  --global-separator: color-mix(in srgb, var(--neutral), var(--mix-forward) 50%);
+}
